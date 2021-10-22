@@ -8,17 +8,17 @@ def add_person(name, bill):
   dict[name] = bill
   
 def print_result(dict):
-  bill = 0
+  bid = 0
   for item in dict:
-    if int(dict[item]) > int(bill):
+    if int(dict[item]) > int(bid):
       winner = item
-      bill = dict[item]
-  print(f"The winner is {winner} with the bill of {bill}")
+      bid = dict[item]
+  print(f"The winner is {winner} with the bid of ${bid}")
 
 while add:
   name = input("What is your name ? : ")
-  bill = input("What is your bill ? : ")
-  add_person(name, bill)
+  bid = input("What is your bid ? : ")
+  add_person(name, bid)
   choice = input("Continue? ")
   if choice == 'no':
     add = False 
